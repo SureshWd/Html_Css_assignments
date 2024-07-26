@@ -1,0 +1,179 @@
+/* styles for header  */
+header{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    background-image: url(./images/bg.jpg) ;
+}
+
+/* styles for h1 in the header */
+
+header>h1{
+    text-align: center;
+}
+
+/* hover effect */
+
+header>h1:hover{
+    font-style: italic;
+    color: aquamarine;
+}
+
+/* hover effect for paragraph */
+
+header>p:hover{
+    color: gold
+}
+
+/* styles for navigation bar  */
+
+nav{
+    display: flex;
+    justify-content:center;
+    
+}
+
+/*  inside navigation bar styles for unordered list */
+
+nav>ul{
+    display:flex;
+    flex-direction: row;
+}
+
+/*  inside navigation bar styles for unordered list items */
+
+nav>ul>li{
+    padding-right: 40px;
+    list-style: none;
+}
+
+/* style for anchor tag */
+
+nav>ul>li>a{
+    text-decoration: none;
+    color: lightgreen;
+}
+
+/* hover effect for anchor tag  */
+
+nav>ul>li>a:hover{
+    color: blue;
+    font-weight:bolder;
+}
+
+/* styles for the flex container */
+
+ .container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* style for blog posts */
+
+.blog{
+    flex: 1 1 calc(25% - 20px);
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: burlywood;
+}
+
+/* hover effect for blog posts headings */
+
+.blog>h2:hover{
+    color: blueviolet;
+}
+
+/* hover effect for blog post sub-headings */
+
+.blog>h3:hover{
+    color:chocolate;
+}
+
+/* hover effect for blog post articles */
+
+.blog>article:hover{
+    color: darkorchid;
+}
+
+/* hover effect for about me section */
+
+#aboutme:hover{
+     color: deeppink;
+}
+
+/* hover effect for article */
+
+.about:hover{
+    color: dodgerblue;
+}
+
+/* style for contact us */
+
+.con{
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+/* style for name in contact us  */
+
+#name{
+    width: 100%;
+}
+
+/* style for email in contact us  */
+
+#email{
+    width: 100%;
+}
+
+/* style for comments in contact us  */
+
+#comment{
+    width: 100%;
+}
+
+/* styles for submit button */
+
+#sub{
+    background-color: black;
+    color: white;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 70px;
+    height: 30px;
+}
+
+/* styles for footer */
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 40px;
+}
+
+/* media query for 768px and less than it */
+
+@media (max-width: 768px){
+    .blog{
+         flex: 1 1 calc(50% - 20px);
+    }
+}
+
+/* media query for 480px and less than it */
+
+@media (max-width: 480px){
+    .blog{
+        flex: 1 1 100%;
+    }
+}
+
